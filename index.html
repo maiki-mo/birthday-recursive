@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+  </style>
+  <script>
+function onClick() {
+
+var yearBorn = parseInt(window.prompt("What year were you born?"));
+console.log(yearBorn);
+var yearNow = parseInt(window.prompt("What year is it?"));
+console.log(yearNow);
+
+function age(yearNow, yearBorn, yearTotal = 0) {
+    if (yearNow === yearBorn) {
+      alert(yearTotal + " years young!");
+    }
+
+    return age(yearNow - 1, yearBorn, yearTotal + 1);
+ }
+return age();
+}
+  </script>
+</head>
+</body>
+<div>
+  <button onclick="onClick()">
+</div>
+</body>
+</html>
